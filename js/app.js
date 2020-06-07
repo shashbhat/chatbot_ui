@@ -17,7 +17,7 @@ $("#user-input-form").on("submit", function (e) {
   function botResponse(userMsg) {
 
     // Bot Response
-    $.get( `https://chatbot-v3.herokuapp.com/chat/${userMsg}`, function(data){
+    $.get( `https://edith-chatbot.herokuapp.com/getResponse?msg=${userMsg}`, function(data){
       console.log(userMsg);
       console.log(data);
 
